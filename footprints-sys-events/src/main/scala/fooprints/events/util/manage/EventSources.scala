@@ -17,12 +17,12 @@ class EventSources(var event_topic: String, var event_parent_id: Long, var event
     this(event_topic, 0L, event_id, event_status, event_ename, event_cname)
   }
 
-  def this(event_topic: String, event_status: Int,
-           event_ename: String, event_cname: String) = {
-
-    this(event_topic, 0L, getEventId, event_status, event_ename, event_cname)
-
-  }
+//  def this(event_topic: String, event_status: Int,
+//           event_ename: String, event_cname: String) = {
+//
+//    this(event_topic, 0L, getEventId, event_status, event_ename, event_cname)
+//
+//  }
 
   //事件主题
   override def topic: String = event_topic
