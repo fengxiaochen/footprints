@@ -9,9 +9,19 @@ class EventSourceServlet extends ScalatraServlet with ScalateSupport {
   before() {
     contentType = "text/html"
   }
-
-  get("/event/") {
-    layoutTemplate("/WEB-INF/templates/views/index.ssp")
+  get("/source/query") {
+    print("2222222222222222222222")
+    <h1>Hello, world!1111111111</h1>
+//    layoutTemplate("/WEB-INF/templates/views/index.ssp")
   }
+//  get("/source/add") {
+//    layoutTemplate("/WEB-INF/templates/views/index.ssp")
+//  }
+//  get("/source/del") {
+//    layoutTemplate("/WEB-INF/templates/views/index.ssp")
+//  }
+//  get("/source/update") {
+//    layoutTemplate("/WEB-INF/templates/views/index.ssp")
+//  }
  
 }

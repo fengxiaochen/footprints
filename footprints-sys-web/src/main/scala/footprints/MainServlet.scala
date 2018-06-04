@@ -11,7 +11,21 @@ class MainServlet extends ScalatraServlet with ScalateSupport {
   }
 
   get("/") {
-    layoutTemplate("/WEB-INF/templates/views/index.ssp")
+    <html>
+      <body>
+        <h1>Hello, world!</h1>
+        Say
+        <a href="hello-scalate">hello to Scalate</a>
+      </body>
+    </html>
   }
+  get("/hello") {
+    <p>Hello, world!</p>
+  }
+  get("/hello1") {
+    <p>Hello, world!</p>
+  }
+
+
 
 }
